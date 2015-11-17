@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AFE7D83-6958-4B23-857F-85981E42C219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vista</RootNamespace>
+    <AssemblyName>Vista</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbaricoqueDataSet.cs">
+      <DependentUpon>AlbaricoqueDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlbaricoqueDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlbaricoqueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Mantenimiento_MateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Mantenimiento_MateriaPrima.Designer.cs">
+      <DependentUpon>Interfaz_Mantenimiento_MateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_MatenimientoMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_MatenimientoMP.Designer.cs">
+      <DependentUpon>Interfaz_MatenimientoMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Registrar_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Registrar_Compra.Designer.cs">
+      <DependentUpon>Interfaz_Registrar_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Registro_MateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces MateriaPrima\Interfaz_Registro_MateriaPrima.Designer.cs">
+      <DependentUpon>Interfaz_Registro_MateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Eliminar_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Eliminar_Proveedor.Designer.cs">
+      <DependentUpon>Interfaz_Eliminar_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Mantenimiento_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Mantenimiento_Proveedor.Designer.cs">
+      <DependentUpon>Interfaz_Mantenimiento_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Modificar_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Modificar_Proveedor.Designer.cs">
+      <DependentUpon>Interfaz_Modificar_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Registrar_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Proveedor\Interfaz_Registrar_Proveedor.Designer.cs">
+      <DependentUpon>Interfaz_Registrar_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Eliminar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Eliminar_Usuario.Designer.cs">
+      <DependentUpon>Interfaz_Eliminar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Mantenimiento_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Mantenimiento_Usuarios.Designer.cs">
+      <DependentUpon>Interfaz_Mantenimiento_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Modificar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Modificar_Usuario.Designer.cs">
+      <DependentUpon>Interfaz_Modificar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Registrar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces Usuario\Interfaz_Registrar_Usuario.Designer.cs">
+      <DependentUpon>Interfaz_Registrar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Menu\Interfaz_Mantenimiento_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Menu\Interfaz_Mantenimiento_Menu.Designer.cs">
+      <DependentUpon>Interfaz_Mantenimiento_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Menu\Interfaz_Modificar_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Menu\Interfaz_Modificar_Menu.Designer.cs">
+      <DependentUpon>Interfaz_Modificar_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_Categorias\Interfaz_Mantenimiento_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Categorias\Interfaz_Mantenimiento_Categorias.Designer.cs">
+      <DependentUpon>Interfaz_Mantenimiento_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_Cortes\Interfaz_Cortes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Cortes\Interfaz_Cortes.Designer.cs">
+      <DependentUpon>Interfaz_Cortes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_Cortes_Venta\Cortes_Veta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Cortes_Venta\Cortes_Veta.Designer.cs">
+      <DependentUpon>Cortes_Veta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Principal.Designer.cs">
+      <DependentUpon>Interfaz_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punto_De_Venta\Interfaz_Cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto_De_Venta\Interfaz_Cobrar.Designer.cs">
+      <DependentUpon>Interfaz_Cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Punto_De_Venta\Interfaz_Punto_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto_De_Venta\Interfaz_Punto_Venta.Designer.cs">
+      <DependentUpon>Interfaz_Punto_Venta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Interfaces MateriaPrima\Interfaz_Mantenimiento_MateriaPrima.resx">
+      <DependentUpon>Interfaz_Mantenimiento_MateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces MateriaPrima\Interfaz_MatenimientoMP.resx">
+      <DependentUpon>Interfaz_MatenimientoMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces MateriaPrima\Interfaz_Registrar_Compra.resx">
+      <DependentUpon>Interfaz_Registrar_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces MateriaPrima\Interfaz_Registro_MateriaPrima.resx">
+      <DependentUpon>Interfaz_Registro_MateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Proveedor\Interfaz_Eliminar_Proveedor.resx">
+      <DependentUpon>Interfaz_Eliminar_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Proveedor\Interfaz_Mantenimiento_Proveedor.resx">
+      <DependentUpon>Interfaz_Mantenimiento_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Proveedor\Interfaz_Modificar_Proveedor.resx">
+      <DependentUpon>Interfaz_Modificar_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Proveedor\Interfaz_Registrar_Proveedor.resx">
+      <DependentUpon>Interfaz_Registrar_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Usuario\Interfaz_Eliminar_Usuario.resx">
+      <DependentUpon>Interfaz_Eliminar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Usuario\Interfaz_Mantenimiento_Usuarios.resx">
+      <DependentUpon>Interfaz_Mantenimiento_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Usuario\Interfaz_Modificar_Usuario.resx">
+      <DependentUpon>Interfaz_Modificar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces Usuario\Interfaz_Registrar_Usuario.resx">
+      <DependentUpon>Interfaz_Registrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Menu\Interfaz_Mantenimiento_Menu.resx">
+      <DependentUpon>Interfaz_Mantenimiento_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Menu\Interfaz_Modificar_Menu.resx">
+      <DependentUpon>Interfaz_Modificar_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Categorias\Interfaz_Mantenimiento_Categorias.resx">
+      <DependentUpon>Interfaz_Mantenimiento_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Cortes\Interfaz_Cortes.resx">
+      <DependentUpon>Interfaz_Cortes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Cortes_Venta\Cortes_Veta.resx">
+      <DependentUpon>Cortes_Veta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Principal.resx">
+      <DependentUpon>Interfaz_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Punto_De_Venta\Interfaz_Cobrar.resx">
+      <DependentUpon>Interfaz_Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Punto_De_Venta\Interfaz_Punto_Venta.resx">
+      <DependentUpon>Interfaz_Punto_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AlbaricoqueDataSet.xsc">
+      <DependentUpon>AlbaricoqueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlbaricoqueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlbaricoqueDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlbaricoqueDataSet.xss">
+      <DependentUpon>AlbaricoqueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controlador\Controlador.csproj">
+      <Project>{ca663876-db7c-4f9b-8b02-255002fbed35}</Project>
+      <Name>Controlador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{f7bb9324-c0b0-41b4-b942-4088b1324e29}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11698511_1106738809343438_5015517587881444120_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432456688_search-80px.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432454896_add-80px.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1442197941_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432447397_table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443415716_Food-Dome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443416087_bunch_ingredients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443416850_food-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443417293_delivery_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443417672_Streamline-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443417644_money_cash_pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443417889_group2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443418055_custom-reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443418654_free-14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443418716_free-14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443418797_36.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443418961_060_Off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432580640_power-button.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432580582_power-button.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\albaricoque.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
